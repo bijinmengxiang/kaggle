@@ -57,13 +57,13 @@ test.csv - Personal records for the remaining one-third (~4300) of the passenger
 
 运行find_connection_in destination.py我们得到：
 
-![image](https://user-images.githubusercontent.com/46309653/157363918-bef72a32-bbd6-4494-85d8-1b52f23d6437.png)
+![image](https://user-images.githubusercontent.com/46309653/157377647-1db09f71-7c78-4897-aeca-c1a0f94951cb.png)
 
 此处说明乘客目的地与乘客是否进入异次元空间有一定影响
 
 运行find_connection_in VIP.py我们得到：
 
-![image](https://user-images.githubusercontent.com/46309653/157363918-bef72a32-bbd6-4494-85d8-1b52f23d6437.png)
+![image](https://user-images.githubusercontent.com/46309653/157377595-6311156e-b128-4136-84bd-56111c9fbe48.png)
 
 此处说明乘客是否为VIP客户与乘客是否进入异次元空间有一定影响
 
