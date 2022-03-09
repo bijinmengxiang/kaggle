@@ -29,23 +29,35 @@ test.csv - Personal records for the remaining one-third (~4300) of the passenger
 我们分析了“乘客一同参加的旅行团队的成员数量find_connection_in id.py”，“乘客所属母星find_connection_in HomePlanet.py”，“是否处于休眠状态find_connection_in cryosleep.py”，“乘客目的地find_connection_in destination.py”，“乘客是否为VIP客户find_connection_in VIP.py”属性对于乘客是否进入异次元空间的影响。
 
 运行find_connection_in id.py我们得到：
+
 ![image](https://user-images.githubusercontent.com/46309653/157363548-48b35f71-b0b2-4dac-b7ad-b717cf37647f.png)
+
 此处说明乘客一同参加的旅行团队的成员数量与乘客是否进入异次元空间有一定影响
 
 运行find_connection_in HomePlanet.py我们得到：
+
 ![image](https://user-images.githubusercontent.com/46309653/157363760-3efed50e-6be2-47df-af41-8185aa9639f6.png)
+
 此处说明乘客所属母星与乘客是否进入异次元空间有一定影响
 
 运行find_connection_in cryosleep.py我们得到：
+
 ![image](https://user-images.githubusercontent.com/46309653/157363839-8d68f38a-300e-47e1-a43d-51ee37bb62c3.png)
+
 此处说明乘客是否处于休眠状态与乘客是否进入异次元空间有大量影响
 
 运行find_connection_in destination.py我们得到：
+
 ![image](https://user-images.githubusercontent.com/46309653/157363918-bef72a32-bbd6-4494-85d8-1b52f23d6437.png)
+
 此处说明乘客目的地与乘客是否进入异次元空间有一定影响
 
 运行find_connection_in VIP.py我们得到：
+
 ![image](https://user-images.githubusercontent.com/46309653/157363918-bef72a32-bbd6-4494-85d8-1b52f23d6437.png)
+
 此处说明乘客是否为VIP客户与乘客是否进入异次元空间有一定影响
 
+而最终本实验共11个属性（）
 
+（其中多出来的6个属性为年龄（有着较好区分人物的效果），消费水平中的五个参数（通过将训练集中的部分拆分为验证集的方法，并加入这五个属性进行验证性训练，我们发现损失值大大降低，并且这五个属性中都为消费金额，为可直接处理的连续值，虽然在数据集中含有缺失数据的情况，但均将缺失数据赋值为0进行训练））
