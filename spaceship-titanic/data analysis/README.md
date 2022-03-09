@@ -8,15 +8,23 @@
 
 """
 train.csv - Personal records for about two-thirds (~8700) of the passengers, to be used as training data.
+
 PassengerId - A unique Id for each passenger. Each Id takes the form gggg_pp where gggg indicates a group the passenger is travelling with and pp is their number within the group. People in a group are often family members, but not always.（乘客的ID 共由六位数字组成，前四位为团队编号，代表可能为一同参加的旅行）
+
 HomePlanet - The planet the passenger departed from, typically their planet of permanent residence.（乘客所属母星）
+
 CryoSleep - Indicates whether the passenger elected to be put into suspended animation for the duration of the voyage. Passengers in cryosleep are confined to their cabins.（是否处于休眠状态）
+
 Cabin - The cabin number where the passenger is staying. Takes the form deck/num/side, where side can be either P for Port or S for Starboard.（乘客的床铺位置）
 Destination - The planet the passenger will be debarking to.（乘客目的地）
+
 Age - The age of the passenger.（乘客年龄）
+
 VIP - Whether the passenger has paid for special VIP service during the voyage.（乘客是否为VIP客户）
+
 RoomService, FoodCourt, ShoppingMall, Spa, VRDeck - Amount the passenger has billed at each of the Spaceship Titanic's many luxury amenities.（乘客在船上各类的消费数量）
 Name - The first and last names of the passenger.（乘客姓名）
+
 Transported - Whether the passenger was transported to another dimension. This is the target, the column you are trying to predict.（乘客是否进入异次元空间）
 
 test.csv - Personal records for the remaining one-third (~4300) of the passengers, to be used as test data. Your task is to predict the value of Transported for the passengers in this set.（测试集除了不提供Transported属性外，其他与训练集相同）
