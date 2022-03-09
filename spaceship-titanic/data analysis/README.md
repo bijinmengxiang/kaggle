@@ -16,6 +16,7 @@ HomePlanet - The planet the passenger departed from, typically their planet of p
 CryoSleep - Indicates whether the passenger elected to be put into suspended animation for the duration of the voyage. Passengers in cryosleep are confined to their cabins.（是否处于休眠状态）
 
 Cabin - The cabin number where the passenger is staying. Takes the form deck/num/side, where side can be either P for Port or S for Starboard.（乘客的床铺位置）
+
 Destination - The planet the passenger will be debarking to.（乘客目的地）
 
 Age - The age of the passenger.（乘客年龄）
@@ -66,6 +67,10 @@ test.csv - Personal records for the remaining one-third (~4300) of the passenger
 
 此处说明乘客是否为VIP客户与乘客是否进入异次元空间有一定影响
 
-而最终本实验共11个属性（）
+年龄属性：有着较好区分人物的效果，且数值方便处理，所以决定加入训练属性中。
 
-（其中多出来的6个属性为年龄（有着较好区分人物的效果），消费水平中的五个参数（通过将训练集中的部分拆分为验证集的方法，并加入这五个属性进行验证性训练，我们发现损失值大大降低，并且这五个属性中都为消费金额，为可直接处理的连续值，虽然在数据集中含有缺失数据的情况，但均将缺失数据赋值为0进行训练））
+消费金额的五个属性：通过将训练集中的部分拆分为验证集的方法，并加入这五个属性进行验证性训练（find），我们发现损失值大大降低，并且这五个属性中都为消费金额，为可直接处理的连续值，虽然在数据集中含有缺失数据的情况，但均将缺失数据赋值为0进行训练。
+
+而最终本实验共训练11/12个属性:HomePlanet（将原星球使用0/1/2代替）&& CryoSleep（不做处理）&& Destination（将目的地星球使用0/1/2代替）&& Age（不做处理）&& VIP（不做处理）&& RoomService, FoodCourt, ShoppingMall, Spa, VRDeck（消费金额，不做处理）。选择性使用旅行团队的成员数量属性进行训练（因为发现效果不佳，预计可能需要与姓名属性相配合才能达到更好的效果）
+
+
